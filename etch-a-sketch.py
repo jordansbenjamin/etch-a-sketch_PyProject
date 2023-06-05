@@ -22,6 +22,8 @@ def clockwise():
     pen.right(10)
 
 # Clear drawing
+def clear_screen():
+    screen.resetscreen()
 
 screen.listen()
 
@@ -29,5 +31,6 @@ screen.onkey(key='w', fun=forwards)
 screen.onkey(key='s', fun=backwards)
 screen.onkey(key='a', fun=counter_clockwise)
 screen.onkey(key='d', fun=clockwise)
+screen.onkey(key='c', fun=clear_screen)
 
 screen.exitonclick()
