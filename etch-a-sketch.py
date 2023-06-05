@@ -10,6 +10,8 @@ def forwards():
     pen.forward(10)
 
 # Backwards
+def backwards():
+    pen.backward(10)
 
 # Rotate counter-clockwise (left)
 
@@ -20,5 +22,6 @@ def forwards():
 screen.listen()
 
 screen.onkey(key='w', fun=forwards)
+screen.onkey(key='s', fun=backwards)
 
 screen.exitonclick()
